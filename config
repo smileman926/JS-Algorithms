@@ -1,9 +1,0 @@
-Host github.com-therajanmaurya
-    HostName github.com
-    User git
-    IdentityFile ~/.ssh/id_rsa_my
-#example account
-Host github-example
-    HostName github.com
-    User git
-    IdentityFile ~/.ssh/id_rsa_smileman
