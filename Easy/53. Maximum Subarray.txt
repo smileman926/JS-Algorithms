@@ -1,0 +1,17 @@
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var maxSubArray = function(nums) {
+    // nums=[1,4,5,15,3,2,1,2];
+  
+  var prev = 0;
+  var max = -Number.MAX_VALUE;
+
+  for (var i = 0; i < nums.length; i++) {
+    prev = Math.max(prev + nums[i], nums[i]);
+    max = Math.max(max, prev);
+  }
+  return max;
+
+};
